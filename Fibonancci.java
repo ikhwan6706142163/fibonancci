@@ -11,13 +11,13 @@ public class Fibonancci {
         int number = new Scanner(System.in).nextInt();
  
         System.out.println("\n\nFibonacci series upto " + number +" numbers : ");
-        //printing Fibonacci series upto number
+     
         for(int i=1; i<=number; i++){
             System.out.print(fibonacciRecusion(i) +" ");
         }
     } 
  
-    // Java program for Fibonacci number using recursion.
+  
     public static int fibonacciRecusion(int number){
         if(number == 1 || number == 2){
             return 1;
@@ -26,7 +26,7 @@ public class Fibonancci {
         return fibonacciRecusion(number-1) + fibonacciRecusion(number -2); //tail recursion
     }
  
-    // Java program for Fibonacci number using Loop.
+
     public static int fibonacciLoop(int number){
         if(number == 1 || number == 2){
             return 1;
